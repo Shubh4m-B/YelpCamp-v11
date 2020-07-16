@@ -1,0 +1,49 @@
+body{
+	background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.jumbotron{
+	background : none;
+	color: white;
+	border: 2px solid #c4c4c4;
+}
+.row .lead{
+	color:#c4c4c4;
+}
+h1{
+	color:#c4c4c4;
+}
+#footer{
+	text-align: center;
+	color: white;
+	margin-top: 10px;
+}
+#back{
+	margin: 20px 30%;
+	width: 40%;
+}
+.card{
+	margin-bottom: 20px;
+}
+.line{
+	display: inline;
+}
+#flash-success{
+	background-color: rgba(115, 255, 124, 0.4);
+	border-color: #73ff7c; 
+	color: #73ff7c;
+	margin-top: 20px;
+}
+#flash-danger{
+	background-color: rgba(255, 145, 145, 0.3) ;
+	border-color: #ff9191;
+	color: #ff9191;
+	margin-top: 20px;
+}
+#flash-warning{
+	background-color: rgba(255, 229, 145, 0.3);
+	border-color: #ffe591; 
+	color: #ffe591;
+	margin-top: 20px;
+}

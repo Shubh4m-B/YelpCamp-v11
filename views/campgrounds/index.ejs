@@ -1,0 +1,38 @@
+<%- include("../partials/header.ejs"); %>
+
+<div class="container">
+	
+	<header class="jumbotron" style="margin: 20px 0px">
+		<div class="container">
+			<h1>
+				Welcome to YelpCamp!
+			</h1>
+			<p>
+				View our best handpicked campgrounds from all over India
+			</p>
+			<p>
+				<a class="btn btn-lg btn-outline-light" href="/campgrounds/new">Add new Campground</a><br>
+			</p>	
+		</div>
+	</header>
+	<div class="row text-center" style="display: flex; flex-wrap: wrap;">
+			<% allCamps.forEach(function(camp){ %>
+				<div class="col-md-3 col-sm-6">
+					<div class="card">
+						<img src="<%= camp.image %>" style="max-width:100%; height:auto;" class="card-img-top">
+						
+						<div class="card-title" style="margin:15px auto">
+							<h5><%= camp.name %></h5>
+						</div>
+						<p>
+							<a class="btn btn-outline-primary btn-sm" href="/campgrounds/<%= camp._id %>">Show more</a>
+						</p>
+					</div>
+				
+				</div>
+			<% }); %>
+	</div>
+	
+	
+</div>	
+<%- include("../partials/footer.ejs"); %>
